@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Login page feature
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 66.726 s <<< FAILURE! - in Login page feature
+Login with correct credentials(Login page feature)  Time elapsed: 27.917 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<My [A]ccount - My Store> but was:<My [a]ccount - My Store>
+

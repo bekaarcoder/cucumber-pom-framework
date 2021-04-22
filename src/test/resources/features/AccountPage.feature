@@ -18,4 +18,4 @@ Scenario: Account Section Links
 	|	MY CREDIT SLIPS						|
 	|	MY PERSONAL INFORMATION		|
 	|	MY WISHLISTS							|
-	Then "5" links are displayed in the account section
+	Then "6" links are displayed in the account section

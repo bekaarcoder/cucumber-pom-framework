@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51815" started-at="2021-04-22T11:14:34Z" finished-at="2021-04-22T11:15:26Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="51815" started-at="2021-04-22T11:14:34Z" finished-at="2021-04-22T11:15:26Z">
+      <class name="parallel.ParallelTestNG">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="setUpClass" is-config="true" duration-ms="999" started-at="2021-04-22T11:14:34Z" finished-at="2021-04-22T11:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" duration-ms="44377" started-at="2021-04-22T11:14:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T11:15:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<My [A]ccount - My Store> but was:<My [a]ccount - My Store>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<My [A]ccount - My Store> but was:<My [a]ccount - My Store>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at parallel.LoginSteps.page_title_should_be(LoginSteps.java:28)
+at ✽.Page title should be "My Account - My Store"(file:///C:/Users/shashank.basant/eclipse-workspace/CucumberPOMFramework/src/test/resources/parallel/LoginPage.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" duration-ms="41553" started-at="2021-04-22T11:14:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T11:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Account Section Links"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<6> but was:<5>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<6> but was:<5>
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.failNotEquals(Assert.java:835)
+at org.junit.Assert.assertEquals(Assert.java:647)
+at org.junit.Assert.assertEquals(Assert.java:633)
+at parallel.AccountPageSteps.links_are_displayed_in_the_account_section(AccountPageSteps.java:43)
+at ✽."6" links are displayed in the account section(file:///C:/Users/shashank.basant/eclipse-workspace/CucumberPOMFramework/src/test/resources/parallel/AccountPage.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" duration-ms="27402" started-at="2021-04-22T11:14:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T11:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Forgot Password Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" duration-ms="38785" started-at="2021-04-22T11:14:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T11:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="runScenario" duration-ms="26127" started-at="2021-04-22T11:14:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T11:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login Page Title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelTestNG@617faa95]" name="tearDownClass" is-config="true" duration-ms="6376" started-at="2021-04-22T11:15:19Z" finished-at="2021-04-22T11:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.ParallelTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
