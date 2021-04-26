@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parallel.ParallelTestNG">
+      <class name="parallel.FailedTestNGRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="1 4"/>
+          <include name="runScenario" invocation-numbers="4 2 1 0 3"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- parallel.ParallelTestNG -->
+      </class> <!-- parallel.FailedTestNGRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

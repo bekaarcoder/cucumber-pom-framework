@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-			features = {"src/test/resources/features/LoginPage.feature"},
+			features = {"@target/failed-rerun.txt"},
 			glue = {"stepDefinitions", "appHooks"},
 			plugin = {
 					"pretty",
@@ -18,6 +18,6 @@ import io.cucumber.junit.CucumberOptions;
 			monochrome = true
 		)
 
-public class MyTestRunner {
+public class FailTestRunner {
 
 }

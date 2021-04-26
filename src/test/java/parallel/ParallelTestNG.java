@@ -6,12 +6,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-			features = {"src/test/resources/parallel"},
+			features = {"src/test/resources/parallel/LoginPage.feature"},
 			glue = {"parallel"},
 			plugin = {
 					"pretty", 
 					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-					"timeline:test-output-thread/"
+					"timeline:test-output-thread/",
+					"rerun:target/failed-rerun.txt"
 					},
 			monochrome = true
 		)
